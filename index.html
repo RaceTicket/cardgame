@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>BLACKJACK</h1>
+        
+        <div class="main-layout">
+            <div class="table">
+                <div class="deck-display">
+                    <div class="deck-stack">
+                        <div class="deck-card"></div>
+                        <div class="deck-card"></div>
+                        <div class="deck-card"></div>
+                    </div>
+                </div>
+
+                <div class="chips-stack-display">
+                    <div class="chips-box-container">
+                        <!-- Red $10 -->
+                        <div class="chip-column">
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                            <div class="top-chip chip-red"></div>
+                        </div>
+                        <!-- Green $25 -->
+                        <div class="chip-column">
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                            <div class="top-chip chip-green"></div>
+                        </div>
+                        <!-- Blue $50 -->
+                        <div class="chip-column">
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                            <div class="top-chip chip-blue"></div>
+                        </div>
+                        <!-- Black $100 -->
+                        <div class="chip-column">
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                            <div class="top-chip chip-black"></div>
+                        </div>
+                        <!-- Purple $500 -->
+                        <div class="chip-column">
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                            <div class="top-chip chip-purple"></div>
+                        </div>
+                        <!-- Gold $1000 -->
+                        <div class="chip-column">
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                            <div class="top-chip chip-gold"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dealer-section">
+                    <h2>Dealer</h2>
+                    <div id="dealer-cards" class="cards"></div>
+                    <p id="dealer-score" class="score">Score: 0</p>
+                </div>
+
+                <div class="player-section">
+                    <h2>You</h2>
+                    <div id="player-cards" class="cards"></div>
+                    <p id="player-score" class="score">Score: 0</p>
+                </div>
+
+                <div class="game-controls" id="game-controls" style="display: none;">
+                    <button id="hit-btn" class="btn btn-hit">Hit</button>
+                    <button id="stand-btn" class="btn btn-stand">Stand</button>
+                </div>
+            </div>
+
+        <div class="betting-area">
+            <div class="bankroll-display">
+                <p id="bankroll" class="bankroll">Bankroll: <span id="bankroll-chip">1000</span></p>
+                <button id="cashout-btn" class="btn btn-cashout">Cash Out</button>
+            </div>
+            <p id="message" class="message">Place your bet!</p>
+            <div class="current-bet-display">
+                <p id="current-bet">Your Bet: <span id="current-bet-chip" class="chip chip-display">0</span></p>
+            </div>
+
+            <div class="chips-box">
+                <p class="chips-label">Chips</p>
+                <div class="chip-buttons">
+                    <button class="chip-btn" data-amount="10"><span class="chip chip-sm chip-red">10</span></button>
+                    <button class="chip-btn" data-amount="25"><span class="chip chip-sm chip-green">25</span></button>
+                    <button class="chip-btn" data-amount="50"><span class="chip chip-sm chip-blue">50</span></button>
+                    <button class="chip-btn" data-amount="100"><span class="chip chip-sm chip-black">100</span></button>
+                    <button class="chip-btn" data-amount="500"><span class="chip chip-sm chip-purple">500</span></button>
+                    <button class="chip-btn" data-amount="1000"><span class="chip chip-sm chip-gold">1000</span></button>
+                </div>
+            </div>
+
+            <div class="bet-controls">
+                <button id="bet-btn" class="btn btn-place-bet">Place Bet</button>
+                <button id="clear-btn" class="btn btn-clear">Clear</button>
+                <button id="new-game-btn" class="btn btn-new-game" style="display: none;">New Game</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
